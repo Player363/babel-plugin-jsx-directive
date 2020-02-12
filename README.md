@@ -8,6 +8,20 @@
 3. else
 4. model（类似v-model)
 
+## 安装 && 使用
+```
+npm i babel-plugin-jsx-directive
+```
+
+.babelrc
+```javascript
+{
+    "plugins": [
+        "babel-plugin-jsx-directive"
+    ]
+}
+```
+
 ## 条件判断指令（if, elseIf, else）
 
 ```jsx harmony
@@ -145,4 +159,59 @@ component: `e`
 ```jsx harmony
 <Component model_checked_eventChecked={this.state.a}/>;    // 使用checked属性，取值为e.target.checked
 <Component model__component={this.state.a}/>;      // 使用默认的value属性，取值方式为e
+```
+
+## 设置选项
+
+#### 设置指令名称
+
+设置`if`指令的名称`ifAttrName`，值为`string`
+
+设置`else`指令的名称`elseAttrName`，值为`string`
+
+设置`elseIf`指令的名称`elseIfAttrName`，值为`string`
+
+设置`model`指令的名称`modelAttrName`，值为`string`
+
+```javascript
+{
+    "plugins": [
+        [
+            "babel-plugin-jsx-directive",
+            {
+                "ifAttrName": "v-if",
+                "elseAttrName": "v-else",
+                "elseIfAttrName": "v-else-if",
+                "modelAttrName": "v-model"
+            }
+        ]
+    ]
+}
+```
+
+
+#### 设置启用禁用
+
+设置`if`指令的启用禁用`ifAttrName`，值为`boolean`
+
+设置`else`指令的启用禁用`elseAttrName`，值为`boolean`
+
+设置`elseIf`指令的启用禁用`elseIfAttrName`，值为`boolean`
+
+设置`model`指令的启用禁用`modelAttrName`，值为`boolean`
+
+```javascript
+{
+    "plugins": [
+        [
+            "babel-plugin-jsx-directive",
+            {
+                "ifEnable": false,
+                "elseEnable": false,
+                "elseIfEnable": false,
+                "modelEnable": false
+            }
+        ]
+    ]
+}
 ```
