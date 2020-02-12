@@ -22,7 +22,7 @@ module.exports = function({types, template}, JSXElementPath, attributePath, attr
     // -----------------------------------------------------
     // 默认情况下：
     // text、select、textarea 元素使用 value 属性和 change 事件，取值为 e.target.value
-    // checkbox、radio 使用 checked 属性和 change 事件，取值为 e.target.value
+    // checkbox、radio 使用 checked 属性和 change 事件，取值为 e.target.checked
     // 组件上使用 value 属性和 change 事件，取值为 e
     //
     // 事件固定为onChange，
