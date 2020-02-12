@@ -3,23 +3,19 @@
   "version": "1.0.0",
   "description": "为jsx提供了一些便于开发的指令",
   "main": "lib/index.js",
-  "author": "gailrio",
+  "author": "Player363",
   "license": "MIT",
   "files": [
     "lib"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/panruiplay/babel-plugin-jsx-directive.git"
-  },
   "keywords": [
     "babel",
     "babel-plugin"
   ],
   "bugs": {
-    "url": "https://github.com/panruiplay/babel-plugin-jsx-directive/issues"
+    "url": "https://github.com/Player363/babel-plugin-jsx-directive/issues"
   },
-  "homepage": "https://github.com/panruiplay/babel-plugin-jsx-directive#readme",
+  "homepage": "https://github.com/Player363/babel-plugin-jsx-directive",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
