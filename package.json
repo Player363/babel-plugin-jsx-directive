@@ -33,6 +33,6 @@
     "build": "umi-tools build",
     "test": "mocha test",
     "test:coverage": "umi-tools test --coverage",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "npm run build && npm run test"
   }
 }

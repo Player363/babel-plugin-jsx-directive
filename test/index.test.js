@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-const plugin = require('../src/index')
+const plugin = require('../lib/index')
 const pluginTester = require('babel-plugin-tester')
 
 function getFileContent(filePath) {
