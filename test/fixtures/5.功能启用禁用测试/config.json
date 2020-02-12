@@ -1,0 +1,8 @@
+{
+  "pluginOptions": {
+    "ifEnable": false,
+    "elseEnable": false,
+    "elseIfEnable": false,
+    "modelEnable": false
+  }
+}

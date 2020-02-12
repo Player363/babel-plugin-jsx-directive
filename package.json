@@ -1,0 +1,42 @@
+{
+  "name": "babel-plugin-jsx-directive",
+  "version": "1.0.0",
+  "description": "为jsx提供了一些便于开发的指令",
+  "main": "lib/index.js",
+  "author": "gailrio",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panruiplay/babel-plugin-jsx-directive.git"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/panruiplay/babel-plugin-jsx-directive/issues"
+  },
+  "homepage": "https://github.com/panruiplay/babel-plugin-jsx-directive#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/template": "^7.6.0",
+    "@babel/traverse": "^7.6.0",
+    "@babel/types": "^7.6.1",
+    "babel-plugin-tester": "^7.0.1",
+    "lodash.merge": "^4.6.2",
+    "mocha": "^7.0.1",
+    "umi-tools": "^0.4.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/babel ./dev/src --out-dir ./dev/dist --watch",
+    "build": "umi-tools build",
+    "test": "mocha test",
+    "test:coverage": "umi-tools test --coverage",
+    "prepublishOnly": "npm run test && npm run build"
+  }
+}

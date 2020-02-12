@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "../src/index.js",
+      {
+        "ifAttrName": "if",
+        "ifEnable": true,
+        "elseAttrName": "else",
+        "elseEnable": true,
+        "elseIfAttrName": "elseIf",
+        "elseIfEnable": true,
+        "modelAttrName": "model",
+        "modelEnable": true
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-react"
+  ]
+}

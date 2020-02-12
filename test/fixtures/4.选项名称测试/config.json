@@ -1,0 +1,8 @@
+{
+  "pluginOptions": {
+    "ifAttrName": "vif",
+    "elseAttrName": "velse",
+    "elseIfAttrName": "velseIf",
+    "modelAttrName": "v-model"
+  }
+}
