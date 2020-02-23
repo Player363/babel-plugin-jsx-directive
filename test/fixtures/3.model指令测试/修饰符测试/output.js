@@ -9,7 +9,9 @@ let a = React.createElement("sd", {
     });
   }
 });
-let b = true ? React.createElement("sd", {
-  if_1x: false,
-  if_x4: false
-}) : null;
+let b = true
+  ? React.createElement("sd", {
+      if_1x: false,
+      if_x4: false
+    })
+  : null;

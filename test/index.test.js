@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const plugin = require('../lib/index')
-const pluginTester = require('babel-plugin-tester')
+const pluginTester = require('babel-plugin-tester').default
 
 function getFileContent(filePath) {
     filePath = path.resolve(__dirname, filePath)
