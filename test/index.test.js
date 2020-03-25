@@ -40,4 +40,4 @@ readFixtures().forEach(item => {
         },
         ...item
     })
-});
+})
